@@ -15,7 +15,7 @@ Features:
 - Usernames and Display Names for users 
 - Showing messages as new 
 - Replying to messages 
-- Showing message while it hasn't already loaded 
+- Showing loading messages
 - Deleting messages 
 - Deleting chats 
 
