@@ -1,0 +1,17 @@
+{
+  "name": "messenger-serverside",
+  "version": "1.0.0",
+  "description": "Server-side scripts for firebase Messenger project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "sam@skomarov.com github k0marov",
+  "license": "ISC",
+  "dependencies": {
+    "firebase-admin": "^10.0.2"
+  },
+  "devDependencies": {
+    "typescript": "^4.6.2"
+  }
+}

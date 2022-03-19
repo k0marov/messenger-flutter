@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>207217381099-p3ctf95d2sh9qv3eko7rno0c707nn6tt.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.207217381099-p3ctf95d2sh9qv3eko7rno0c707nn6tt</string>
+	<key>ANDROID_CLIENT_ID</key>
+	<string>207217381099-8ru6pvf6ic80jkd0n8hf1thi22nqvbck.apps.googleusercontent.com</string>
+	<key>API_KEY</key>
+	<string>AIzaSyClDqSpwpDV-8dAO8wvLWgMvCok1pIhTMU</string>
+	<key>GCM_SENDER_ID</key>
+	<string>207217381099</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.skomarov.app</string>
+	<key>PROJECT_ID</key>
+	<string>messenger-in-flutter</string>
+	<key>STORAGE_BUCKET</key>
+	<string>messenger-in-flutter.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:207217381099:ios:0b6b6eac785f4559c4f8ae</string>
+	<key>DATABASE_URL</key>
+	<string>https://messenger-in-flutter-default-rtdb.firebaseio.com</string>
+</dict>
+</plist>
