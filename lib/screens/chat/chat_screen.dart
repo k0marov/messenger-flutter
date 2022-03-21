@@ -120,6 +120,7 @@ class _ChatPageState extends State<ChatPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        actions: const [SizedBox(width: 50, height: 50)], 
         title: InkWell(
           borderRadius: const BorderRadius.all(Radius.circular(10)),
           onTap: () => Navigator.of(context).push(

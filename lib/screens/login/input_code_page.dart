@@ -66,7 +66,6 @@ class _InputCodePageState extends State<InputCodePage> {
       phoneNumber: widget.phone, 
       verificationCompleted: (_) => _onSuccess(), 
       verificationFailed: (_) {
-        print(_); 
         _onFatalError();
       }, 
       codeSent: (verificationId, _) => _onCodeSent(verificationId), 

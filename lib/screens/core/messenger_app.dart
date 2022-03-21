@@ -2,7 +2,7 @@ import 'dart:async';
 
 import 'package:flutter/material.dart'; 
 import 'package:firebase_messaging/firebase_messaging.dart';
-import 'package:messenger/screens/chat/chat_page.dart';
+import 'package:messenger/screens/chat/chat_screen.dart';
 import 'package:messenger/screens/core/exception_gate.dart';
 import 'package:firebase_auth/firebase_auth.dart'; 
 import '../../shared/shared_logic.dart' as shared_logic; 

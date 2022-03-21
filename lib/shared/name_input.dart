@@ -77,11 +77,11 @@ class _NameInputState extends State<NameInput> {
       // if (!widget.isRow) 
       //   textField, 
       Flexible(
-        flex: 3, 
+        flex: 9, 
         child: textField
       ), 
       Flexible(
-        flex: 1, 
+        flex: 4, 
         child: ElevatedButton(
           child: Text(widget.buttonText), 
           onPressed: _controller.text.isEmpty  || (

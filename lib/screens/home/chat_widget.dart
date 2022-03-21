@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:messenger/screens/chat/chat_page.dart';
+import 'package:messenger/screens/chat/chat_screen.dart';
 import 'package:messenger/shared/message_preview.dart';
 import 'package:messenger/models/chat_model.dart';
 import 'package:messenger/models/message_model.dart';
@@ -87,9 +87,6 @@ class _ChatWidgetState extends State<ChatWidget> {
       stream: logic.lastMessage(widget.chat.id), 
       builder: (context, snapshot) {
         final lastMsg = snapshot.data; 
-        print(widget.chat.getName()); 
-        print(lastMsg?.text); 
-        print(lastMsg?.isNew()); 
         return Dismissible(
           direction: DismissDirection.endToStart, 
           dismissThresholds: const {
@@ -134,8 +131,7 @@ class _ChatWidgetState extends State<ChatWidget> {
                 future: logic.newMsgCount(widget.chat.id), 
                 builder: (context, snapshot) {
                   final count = snapshot.data; 
-                  print(count); 
-                  if (count == null || count == 0) return SizedBox(); 
+                  if (count == null || count == 0) return const SizedBox(); 
                   return AspectRatio(
                     aspectRatio: 1,
                     child: Container(

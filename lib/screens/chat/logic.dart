@@ -158,7 +158,7 @@ Future uploadVoiceMessage(DocumentReference msgRef, File voice) {
     .then((_) => voiceRef.getDownloadURL())
     .then((url) => msgRef.update({
       'voiceDlUrl': url 
-    }))
+    })) 
     .then((_) => updateChatActivity(chatId)); 
 }
 

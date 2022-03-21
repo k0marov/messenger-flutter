@@ -1,6 +1,6 @@
 import 'package:firebase_messaging/firebase_messaging.dart'; 
 import 'package:flutter/material.dart';
-import 'package:messenger/screens/chat/chat_page.dart'; 
+import 'package:messenger/screens/chat/chat_screen.dart'; 
 import 'package:another_flushbar/flushbar.dart'; 
 import '../../shared/shared_logic.dart' as shared_logic; 
 

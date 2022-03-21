@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:messenger/screens/chat/chat_page.dart';
+import 'package:messenger/screens/chat/chat_screen.dart';
 
 import '../../shared/contacts_list.dart'; 
 import 'package:messenger/screens/create_new/new_group.dart'; 
