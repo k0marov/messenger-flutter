@@ -120,9 +120,11 @@ class _InputCodePageState extends State<InputCodePage> {
               const Text("Input the code that was sent to your device"), 
             if (_state == CodeState.fatalError)
               const Text("There was an unknown error."), 
-
             if (_state != CodeState.fatalError)
-              _buildCodeField(context),
+              Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: _buildCodeField(context),
+              ),
             if (_state == CodeState.fatalError) 
               ElevatedButton(
                 child: const Text("Try again"), 

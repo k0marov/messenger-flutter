@@ -87,6 +87,9 @@ class _ChatWidgetState extends State<ChatWidget> {
       stream: logic.lastMessage(widget.chat.id), 
       builder: (context, snapshot) {
         final lastMsg = snapshot.data; 
+        print(widget.chat.getName()); 
+        print(lastMsg?.text); 
+        print(lastMsg?.isNew()); 
         return Dismissible(
           direction: DismissDirection.endToStart, 
           dismissThresholds: const {
@@ -127,25 +130,26 @@ class _ChatWidgetState extends State<ChatWidget> {
                 msg: lastMsg, 
               ),
             trailing: lastMsg?.isNew() ?? false ? 
-              AspectRatio(
-                aspectRatio: 1.0, 
-                child: Container(
-                  margin: const EdgeInsets.all(12), 
-                  decoration: const BoxDecoration(
-                    shape: BoxShape.circle, 
-                    color: Colors.blue, 
-                  ),
-                  child: Center(
-                    child: FutureBuilder<int>(
-                      future: logic.newMsgCount(widget.chat.id), 
-                      builder: (context, snapshot) {
-                        if (!snapshot.hasData) return Container(); 
-                        final count = snapshot.data!; 
-                        return Text(count > 9 ? "9+" : "$count"); 
-                      }
-                    )
-                  ) 
-                )
+              FutureBuilder<int>(
+                future: logic.newMsgCount(widget.chat.id), 
+                builder: (context, snapshot) {
+                  final count = snapshot.data; 
+                  print(count); 
+                  if (count == null || count == 0) return SizedBox(); 
+                  return AspectRatio(
+                    aspectRatio: 1,
+                    child: Container(
+                      margin: const EdgeInsets.all(12), 
+                      decoration: const BoxDecoration(
+                        shape: BoxShape.circle, 
+                        color: Colors.blue, 
+                      ),
+                      child: Center(
+                        child: Text(count > 9 ? "9+" : "$count")
+                      ),
+                    ),
+                  ); 
+                }
               )
             : InkWell(
               borderRadius: const BorderRadius.all(Radius.circular(20)),

@@ -26,7 +26,7 @@ void deleteChat(ChatModel chat) async {
 Future<int> newMsgCount(String chatId) {
   return db.collection("chats") 
     .doc(chatId).collection("messages")
-    .orderBy("createdAt")
+    .orderBy("createdAt", descending: true)
     .limit(11)
     .withConverter<MessageModel>(
     toFirestore: (message, _) => message.toJson(), 
